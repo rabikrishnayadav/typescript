@@ -98,6 +98,25 @@ There are many Types of Number in Typescript some of them are<br>
     <kbd>Result:</kbd>
     <script src="numbers/arraynum.js"></script>
 </ol>
+<h4>Type Assertion</h4>
+Type assertion is using for tell the typescript compiler
+ which type of variable is used for showing
+  the (Intelligence)suggestion on the codeEditior<br>
+  There are two way for this.<br>
+  1) With 'angle-bracket'<br>
+  Syntax:<br>
+  <code>
+    let message; // here is only declare the variable not its type<br>
+    message = "Assertion with angle-bracket";<br>
+    (>string>message).length;<br>
+  </code>
+  2) As-Syntax<br>
+  Syntax:<br>
+  <code>
+    let msg; // here is only declare the variable not its type<br>
+    msg = "Assertion use as a syntax";<br>
+    (msg as string).length; // assertion with syntax<br>
+  </code>
 </div>
 
 </body>
