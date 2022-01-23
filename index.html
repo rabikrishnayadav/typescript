@@ -231,6 +231,34 @@ Example:<br>
 </code>
 <kbd>Result:</kbd>
 <script src="object.js"></script>
+</div><hr>
+<div class="container">
+<h3>Constructor</h3>
+Example:<br>
+<code>
+    class Users{<br>
+        // declare the frilds<br>
+        name:string;<br>
+        age: number;<br>
+        address: string;<br>
+        // crating the construnctor<br>
+        // inside the constructor parameter ? operator is used for make the feild optional<br>
+        // 'this' keyword refer to the current instance of the class<br>
+        constructor(username:string, userage:number,useraddr?:string){<br>
+            this.name = username;<br>
+            this.age = userage;<br>
+            this.address = useraddr;<br>
+        }<br>
+        userData(){<br>
+            document.write('The User Name is ' + this.name + 'User Age is ' + this.age + 'User Address is ' + this.address);<br>
+        }<br>
+    }<br>
+    // creating the intance object of class<br>
+    let usrObj = new Users('Rabi Kr Yadav',25,'Janakpur Nepal');<br>
+    usrObj.userData();<br>
+</code>
+<kbd>Result:</kbd>
+<script src="constructor.js"></script>
 </div>
 
 </body>
