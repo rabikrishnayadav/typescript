@@ -259,7 +259,32 @@ Example:<br>
 </code>
 <kbd>Result:</kbd>
 <script src="constructor.js"></script>
-</div>
-
+</div><hr>
+<div class="container">
+<h3>Access Modifier</h3>
+There are 3 types of access Modifiers
+<ol>
+    <li>Public</li>
+    With this we can use from the anywhere
+    <li>Protected</li>
+    With this we can use only from extended classes not anywhere 
+    <li>Private</li>
+    With this we can use only inside the same class
+</ol>
+Example:<br>
+<code>
+    class UserData{<br>
+        constructor(protected username:string, private userage:number, public useraddr?:string){}<br>
+        userData(){<br>
+            document.write('The User Name is ' + this.username + 'User Age is ' + this.userage + 'User Address is ' + this.useraddr);<br>
+        }<br>
+    }<br>
+    // creating the intance object of class<br>
+    let usrObjAccess = new UserData('Rabi Kr Yadav',25,'Janakpur Nepal');<br>
+    usrObjAccess.userData();<br>
+</code>
+<kbd>Result:</kbd>
+<script src="access_modifier.js"></script>
+</div><br><hr><br><h4 class=" bg-success text-center text-bold mb-auto p-2">Thanks</h4>
 </body>
 </html>
