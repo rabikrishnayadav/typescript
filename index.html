@@ -178,7 +178,7 @@ These components put together are termed as the data members of the class.<br>
 Example:<br>
 <code>
     class User{<br>
-        // declare the frilds<br>
+        // declare the feilds<br>
         name:string;<br>
         age: number;<br>
         address: string;<br>
@@ -193,6 +193,44 @@ Example:<br>
         }<br>
     }<br>
 </code>
+</div><hr>
+<div class="container">
+<h3>Object</h3>
+Befor Creating Instance object we must have a Classs.<br>
+To Crate an Instance of the class, use  the 'new' keyword<br>
+Syntax:<br>
+let object_name = new class_name();<br>
+Example:<br>
+<code>
+    class Users{<br>
+        // declare the frilds<br>
+        name:string;<br>
+        age: number;<br>
+        address: string;<br>
+        // declared the method<br>
+        getName(){ <br>
+            document.write('User Name is ' + this.name);<br>
+        }<br>
+        // delcare the method for age<br>
+        getAge(){<br>
+            document.write('User Age is ' + this.age);<br>
+        }<br>
+        // declare the method for address<br>
+        getAddress(){<br>
+            document.write('User Address is ' + this.address);<br>
+        }<br>
+    }<br>
+    // creating the intance object of class<br>
+    let usrDetails = new Users();<br>
+    usrDetails.name = 'Rabi Kr yadav';<br>
+    usrDetails.age = 25;<br>
+    usrDetails.address = 'Janakpur Nepal';<br>
+    usrDetails.getName();<br>
+    usrDetails.getAge();<br>
+    usrDetails.getAddress();<br>
+</code>
+<kbd>Result:</kbd>
+<script src="object.js"></script>
 </div>
 
 </body>
